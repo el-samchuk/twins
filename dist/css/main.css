@@ -25,6 +25,9 @@ h1 {
   color: #5e5e5e;
   font-weight: bold;
 }
+ul {
+  list-style-type: none;
+}
 /*-----------------COLORS-------------------*/
 /*-----------------FONTS--------------------*/
 /*-----------------HEADER-------------------*/
@@ -37,7 +40,7 @@ header {
   -moz-background-size: contain;
   -ms-background-size: contain;
   background-image: url(../../img/header-banner.jpg);
-  min-height: 87.3rem;
+  min-height: 84rem;
   font-size: 1.8rem;
   color: #3e3e3e;
 }
@@ -65,6 +68,7 @@ nav .form-control {
   color: #303030;
 }
 .form-top {
+  font-family: "MyriadProCondBold";
   border: 1px solid red;
 }
 .form-top p {
@@ -114,7 +118,7 @@ form {
 	min-height: 48.7rem;
 }*/
 /*-----------------PARTNERS-------------------*/
-.partners {
+.sertificate {
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -124,4 +128,219 @@ form {
   -ms-background-size: contain;
   background-image: url(../../img/partners-banner.jpg);
   min-height: 56rem;
+  font-family: "MyriadProSemiBold";
+}
+.honors {
+  width: 38rem;
+  height: 42rem;
+  background-color: #fff;
+  font-size: 2.5rem;
+  color: #5e5e5e;
+}
+.partners-title {
+  padding-right: 2rem;
+  font-size: 5rem;
+  color: #fff;
+}
+.partners-title ul li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+.btn-shop {
+  max-width: 70rem;
+  height: 6rem;
+  padding: 1.2rem 18rem;
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #54d5fc;
+  border-radius: 0;
+  border: transparent;
+}
+.btn-shop:hover {
+  color: #54d5fc;
+  background-color: #fff;
+  border: 2px solid #54d5fc;
+}
+/*-----------------PRODUCTS-------------------*/
+.products {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/product-banner.png);
+  min-height: 184rem;
+  font-family: "MyriadProSemiBold";
+}
+.products h2 {
+  font-size: 3.6rem;
+  color: #474747;
+}
+.products h2 span {
+  font-size: 4.6rem;
+}
+.product-items ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+.product-items ul li img {
+  background: #333;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+.btn-product {
+  border-radius: 0;
+  border: 0;
+}
+.btn-product:hover {
+  border: transparent;
+}
+.product-brands ul li {
+  display: inline-block;
+  padding-right: 11rem;
+}
+.product-brands p {
+  font-size: 3.6rem;
+  color: #474747;
+}
+/*-----------------CALL BACK----------------*/
+.call-back {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/call-banner.jpg);
+  height: 77rem;
+  font-family: "MyriadProCondBold";
+}
+.call-back p {
+  color: #fff;
+  font-size: 4.1rem;
+  line-height: 1;
+}
+.call-back p span {
+  font-size: 3.1rem;
+}
+.call-back p span:last-child {
+  font-size: 2.1rem;
+}
+.form-call form {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/form-call.png);
+  min-height: 83rem;
+  margin-top: -5rem;
+  border: 1px solid #000;
+  padding: 10rem 0 0 6rem;
+}
+.btn-call {
+  width: 40rem;
+  height: 8.8rem;
+  background-color: #fcdb00;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 3.4rem;
+  color: #474747;
+}
+.btn-call img {
+  margin-right: 2.4rem;
+}
+.btn-call:hover {
+  background-color: #fcdb00;
+  border: 3px solid #fff;
+  color: #fff;
+}
+/*-----------------PROFIT----------------*/
+.profit {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/profit-banner.png);
+  min-height: 169rem;
+  font-family: "MyriadProSemiBold";
+  font-size: 2.6rem;
+  color: #474747;
+  border: 1px solid red;
+}
+.profit h3 {
+  font-size: 4.6rem;
+}
+.profit h4 {
+  font-size: 3.6rem;
+}
+.profit .shops {
+  font-family: "MyriadProRegular";
+}
+.profit .shops ul {
+  line-height: 2;
+}
+.profit .shops ul img {
+  margin-right: 3.3rem;
+}
+.profit .profit-img {
+  opacity: 0.5;
+}
+.profit .profit-img:hover {
+  opacity: 1;
+}
+/*-----------------FABRICATOR----------------*/
+.fabricator {
+  background-color: #54d5fc;
+  font-family: "MyriadProSemiBold";
+  font-size: 3.6rem;
+  color: #fff;
+}
+.fabricator p {
+  margin: 7.6rem 8.6rem;
+}
+/*-----------------FABRICATOR----------------*/
+.partners {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/call-banner.png);
+  min-height: 112rem;
+  font-family: "MyriadProSemiBold";
+  color: #474747;
+}
+.partners h5 {
+  font-size: 2.4rem;
+}
+.partners ul {
+  line-height: 2;
+}
+.partners ul li {
+  font-size: 1.8rem;
+  padding-left: 6rem;
+  padding-top: -1rem;
+}
+.partners ul li:first-child {
+  background: url(../../img/1.png) no-repeat top left;
+}
+.partners ul li:nth-child(2) {
+  background: url(../../img/2.png) no-repeat top left;
+}
+.partners ul li:nth-child(3) {
+  background: url(../../img/3.png) no-repeat top left;
+}
+.partners ul li:last-child {
+  background: url(../../img/4.png) no-repeat top left;
 }

@@ -36,6 +36,9 @@ h1 {
 	color: #5e5e5e;
 	font-weight: bold;
 }
+ul {
+	list-style-type: none;
+}
 /*-----------------COLORS-------------------*/
 
 
@@ -45,7 +48,7 @@ h1 {
 header {
 	.bg();
 	background-image: url(../../img/header-banner.jpg);
-	min-height: 87.3rem;
+	min-height: 84rem;
 	font-size: 1.8rem;
 	color: #3e3e3e;
 }
@@ -76,6 +79,7 @@ nav {
 	}
 }
 .form-top {
+	font-family: "MyriadProCondBold";
 	border: 1px solid red;
 	p {
 		color: #fff;
@@ -120,8 +124,231 @@ form {
 	min-height: 48.7rem;
 }*/
 /*-----------------PARTNERS-------------------*/
-.partners {
+.sertificate {
 	.bg();
 	background-image: url(../../img/partners-banner.jpg);
 	min-height: 56rem;
+	font-family: "MyriadProSemiBold";
+}
+.honors {
+	width: 38rem;
+	height: 42rem;
+	background-color: #fff;
+	font-size: 2.5rem;
+	color: #5e5e5e;
+}
+.partners-title {
+	padding-right: 2rem;
+	font-size: 5rem;
+	color: #fff;
+
+	ul {
+		li {
+			display: inline-block;
+			padding-right: 2rem;
+		}
+	}
+}
+.btn-shop {
+	max-width: 70rem;
+	height: 6rem;
+	padding: 1.2rem 18rem;
+	font-size: 2.4rem;
+	color: #fff;
+	background-color: #54d5fc;
+	border-radius: 0;
+	border: transparent;
+
+	&:hover {
+		color: #54d5fc;
+		background-color: #fff;
+		border: 2px solid #54d5fc;
+	}
+}
+/*-----------------PRODUCTS-------------------*/
+.products {
+	.bg();
+	background-image: url(../../img/product-banner.png);
+	min-height: 184rem;
+	font-family: "MyriadProSemiBold";
+
+	h2 {
+		font-size: 3.6rem;
+		color: #474747;
+
+		span {
+			font-size: 4.6rem;
+		}
+	}
+}
+.product-items {
+	ul {
+		li {
+			display: inline-block;
+			cursor: pointer;
+			padding: 1.5rem;
+
+			img {
+				background: #333; 
+    			box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+			}
+		}
+	}
+	
+}
+.btn-product {
+	border-radius: 0;
+	border: 0;
+
+	&:hover {
+		border: transparent;
+	}
+
+}
+.product-brands {
+	ul {
+		li {
+			display: inline-block;
+			padding-right: 11rem;
+		}
+	}
+	p {
+		font-size: 3.6rem;
+		color: #474747;
+	}
+}
+/*-----------------CALL BACK----------------*/
+.call-back {
+	.bg();
+	background-image: url(../../img/call-banner.jpg);
+	height: 77rem;
+	font-family: "MyriadProCondBold";
+
+	p {
+		color: #fff;
+		font-size: 4.1rem;
+		line-height: 1;
+			span {
+				font-size: 3.1rem;
+			}
+			span:last-child {
+				font-size: 2.1rem;
+			}
+
+	}
+}
+.form-call {
+	form {
+		.bg();
+		background-image: url(../../img/form-call.png);
+		min-height: 83rem;
+		margin-top: -5rem;
+		border: 1px solid #000;
+		padding: 10rem 0 0 6rem;
+	}
+}
+.btn-call {
+	width: 40rem;
+	height: 8.8rem;
+	background-color: #fcdb00;
+	border-radius: 0;
+	border: 1px solid #fff;
+	font-size: 3.4rem;
+	color: #474747;
+		img {
+			margin-right: 2.4rem;
+		}
+		&:hover {
+			background-color: #fcdb00;
+			border: 3px solid #fff;
+			color: #fff;
+		}
+}
+
+/*-----------------PROFIT----------------*/
+.profit {
+	.bg();
+	background-image: url(../../img/profit-banner.png);
+	min-height: 169rem;
+	font-family: "MyriadProSemiBold";
+	font-size: 2.6rem;
+	color: #474747;
+	
+	border: 1px solid red;
+
+	h3 {
+		font-size: 4.6rem;
+		
+	}
+	h4 {
+		font-size: 3.6rem;
+	}
+
+	.shops {
+		font-family: "MyriadProRegular";
+		ul {
+			line-height: 2;
+				img {
+					margin-right: 3.3rem;
+
+				}
+			}
+		}
+	.profit-img {
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+}
+
+/*-----------------FABRICATOR----------------*/
+.fabricator {
+	background-color: #54d5fc;
+	font-family: "MyriadProSemiBold";
+	font-size: 3.6rem;
+	color: #fff;
+		p {
+			margin: 7.6rem 8.6rem;
+		}
+}
+
+
+
+/*-----------------FABRICATOR----------------*/
+.partners {
+	.bg();
+	background-image: url(../../img/call-banner.png);
+	min-height: 112rem;
+	font-family: "MyriadProSemiBold";
+	color: #474747;
+
+	h5 {
+		font-size: 2.4rem;
+	}
+
+	ul {
+		line-height: 2;
+		li {
+			font-size: 1.8rem;
+			padding-left: 6rem;
+			padding-top: -1rem;
+			&:first-child {
+				background: url(../../img/1.png) no-repeat top left;
+
+			}
+			&:nth-child(2) {
+				background: url(../../img/2.png) no-repeat top left;
+			}
+			&:nth-child(3) {
+				background: url(../../img/3.png) no-repeat top left;
+			}
+			&:last-child {
+				background: url(../../img/4.png) no-repeat top left;
+			}
+
+		}
+	}
+	
 }
