@@ -18,31 +18,34 @@ body {
   background-color: #fff;
   font-size: 10px;
   font-family: "MyriadProCondBold";
-  /*font-family: 'PT Sans', sans-serif;*/
 }
 h1 {
   font-size: 4.2rem;
   color: #5e5e5e;
   font-weight: bold;
+  margin: 7rem 0 7rem 0;
 }
 ul {
   list-style-type: none;
 }
-/*-----------------COLORS-------------------*/
-/*-----------------FONTS--------------------*/
 /*-----------------HEADER-------------------*/
 header {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/header-banner.jpg);
   min-height: 84rem;
-  font-size: 1.8rem;
+  font-family: "MyriadProRegular";
+  font-size: 1.6rem;
   color: #3e3e3e;
+}
+nav {
+  margin-top: 1.5rem;
 }
 nav .form-control {
   height: 5.3rem;
@@ -51,7 +54,7 @@ nav .form-control {
   text-align: center;
   border-radius: 0px;
   border: 2px solid #e79820;
-  /* font color*/
+  color: #282828;
 }
 .phone {
   color: #5e5e5e;
@@ -61,6 +64,7 @@ nav .form-control {
   font-size: 2.4rem;
 }
 .info {
+  font-family: "MyriadProCondBold";
   line-height: 1;
 }
 .info p {
@@ -69,13 +73,6 @@ nav .form-control {
 }
 .form-top {
   font-family: "MyriadProCondBold";
-  border: 1px solid red;
-}
-.form-top p {
-  color: #fff;
-  font-size: 3.1rem;
-}
-form {
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -86,16 +83,23 @@ form {
   background-image: url(../../img/form-top.png);
   min-height: 60.2rem;
   margin-top: -5rem;
-  border: 1px solid #000;
-  padding: 10rem 0 0 6rem;
+  padding: 7rem 3rem;
+}
+.form-top p {
+  color: #fff;
+  font-size: 3.1rem;
+  padding-bottom: 2rem;
+}
+.form-top img {
+  margin-top: 1rem;
 }
 .form-horizontal {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 .form-horizontal label {
   color: #fff;
   height: 5.8rem;
-  line-height: 1.5;
+  line-height: 1;
 }
 .form-horizontal .form-control {
   height: 5.8rem;
@@ -113,42 +117,108 @@ form {
   border-radius: 0;
   border: 1px solid #fff;
 }
-/*.title-info {
-	background-image: url(../../img/toys.jpg);
-	min-height: 48.7rem;
-}*/
+/*-----------------CLIENTS--------------------*/
+.clients {
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-image: url(../../img/profit-banner.png);
+  min-height: 112rem;
+  font-family: "MyriadProCondBold";
+  color: #5e5e5e;
+  font-size: 1.8rem;
+  overflow: hidden;
+}
+.clients .no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.clients .clients-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+  margin: 6rem 0 3rem 0;
+}
+.clients .clients-card {
+  margin-top: 7rem;
+  opacity: 0.5;
+}
+.clients .clients-card:hover {
+  opacity: 1;
+}
+.clients .clients-info {
+  background-color: #54d5fc;
+  color: #fff;
+  line-height: 1;
+  margin-top: -20%;
+}
+.clients .clients-info p {
+  padding: 7rem 2rem 9rem 2rem;
+  font-size: 7rem;
+}
+.clients .clients-info p span {
+  font-size: 5.5rem;
+}
+.clients .count-info {
+  height: 23rem;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #474747;
+  font-size: 2.2rem;
+}
+.clients .count-info p:first-child {
+  font-size: 9rem;
+}
 /*-----------------PARTNERS-------------------*/
 .sertificate {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/partners-banner.jpg);
   min-height: 56rem;
   font-family: "MyriadProSemiBold";
 }
 .honors {
-  width: 38rem;
-  height: 42rem;
+  width: 36rem;
+  height: 40rem;
+  margin-top: 9.5rem;
   background-color: #fff;
   font-size: 2.5rem;
   color: #5e5e5e;
 }
+.honors li:first-child {
+  padding: 4rem 0 4rem 0;
+}
 .partners-title {
-  padding-right: 2rem;
   font-size: 5rem;
   color: #fff;
+}
+.partners-title p {
+  margin-top: 8rem;
+}
+.partners-title .partners-list {
+  margin-top: 9rem;
 }
 .partners-title ul li {
   display: inline-block;
   padding-right: 2rem;
 }
+.partners-title ul:last-child li {
+  padding-right: 3rem;
+}
 .btn-shop {
   max-width: 70rem;
   height: 6rem;
+  margin-top: 3rem;
   padding: 1.2rem 18rem;
   font-size: 2.4rem;
   color: #fff;
@@ -165,55 +235,64 @@ form {
 .products {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/product-banner.png);
-  min-height: 184rem;
+  min-height: 170rem;
   font-family: "MyriadProSemiBold";
 }
 .products h2 {
   font-size: 3.6rem;
   color: #474747;
+  margin: 8rem 5rem;
 }
 .products h2 span {
   font-size: 4.6rem;
 }
-.product-items ul li {
-  display: inline-block;
-  cursor: pointer;
-  padding: 1.5rem;
+.products .btn {
+  padding: 0;
 }
-.product-items ul li img {
+.products .product-items img {
+  margin: 2rem 2rem;
   background: #333;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
-.btn-product {
+.products .btn-product {
+  margin-top: 4rem;
   border-radius: 0;
   border: 0;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
-.btn-product:hover {
+.products .btn-product:hover {
   border: transparent;
 }
-.product-brands ul li {
-  display: inline-block;
-  padding-right: 11rem;
-}
-.product-brands p {
+.products p {
+  margin: 6rem 6rem;
   font-size: 3.6rem;
   color: #474747;
+}
+.brands-list {
+  margin-bottom: 5rem;
+}
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 /*-----------------CALL BACK----------------*/
 .call-back {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/call-banner.jpg);
   height: 77rem;
   font-family: "MyriadProCondBold";
@@ -222,6 +301,7 @@ form {
   color: #fff;
   font-size: 4.1rem;
   line-height: 1;
+  margin-bottom: 8rem;
 }
 .call-back p span {
   font-size: 3.1rem;
@@ -238,14 +318,13 @@ form {
   -moz-background-size: contain;
   -ms-background-size: contain;
   background-image: url(../../img/form-call.png);
-  min-height: 83rem;
-  margin-top: -5rem;
-  border: 1px solid #000;
+  min-height: 75rem;
   padding: 10rem 0 0 6rem;
 }
 .btn-call {
   width: 40rem;
   height: 8.8rem;
+  margin-top: 8rem;
   background-color: #fcdb00;
   border-radius: 0;
   border: 1px solid #fff;
@@ -264,23 +343,25 @@ form {
 .profit {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/profit-banner.png);
-  min-height: 169rem;
+  min-height: 160rem;
   font-family: "MyriadProSemiBold";
   font-size: 2.6rem;
   color: #474747;
-  border: 1px solid red;
 }
 .profit h3 {
   font-size: 4.6rem;
+  margin: 7rem 0 0 0;
 }
 .profit h4 {
   font-size: 3.6rem;
+  margin: 8rem 0 5.5rem 0;
 }
 .profit .shops {
   font-family: "MyriadProRegular";
@@ -311,17 +392,19 @@ form {
 .partners {
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-  -webkit-background-size: contain;
-  -o-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
   background-image: url(../../img/call-banner.png);
   min-height: 112rem;
   font-family: "MyriadProSemiBold";
   color: #474747;
 }
 .partners h5 {
+  margin: 20rem 0 3rem 0;
   font-size: 2.4rem;
 }
 .partners ul {
@@ -344,3 +427,154 @@ form {
 .partners ul li:last-child {
   background: url(../../img/4.png) no-repeat top left;
 }
+.form-bottom {
+  font-family: "MyriadProCondBold";
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  background-image: url(../../img/form-top.png);
+  min-height: 60.2rem;
+  margin-top: 15rem;
+  padding: 7rem 3rem;
+}
+.form-bottom p {
+  color: #fff;
+  font-size: 3.1rem;
+  padding-bottom: 2rem;
+}
+.form-bottom img {
+  margin-top: 1rem;
+}
+.form-bottom .form-horizontal {
+  font-size: 2.4rem;
+}
+.form-bottom .form-horizontal label {
+  color: #fff;
+  height: 5.8rem;
+  line-height: 1;
+}
+.form-bottom .form-horizontal .form-control {
+  height: 5.8rem;
+  color: #ababab;
+  font-size: 2.6rem;
+  border-radius: 0px;
+  border: none;
+  border-top: 1px solid #ababab;
+}
+.form-bottom .btn-price {
+  height: 5.8rem;
+  font-size: 3rem;
+  color: #474747;
+  background-color: #fcdb00;
+  border-radius: 0;
+  border: 1px solid #fff;
+}
+/*--------hover----------------*/
+.img-holder {
+  position: relative;
+  width: 27.3rem;
+  height: 27.3rem;
+  font-family: "MyriadProSemiBold";
+}
+.img-holder:hover {
+  opacity: 1;
+}
+.img-holder .caption {
+  opacity: 0;
+  position: absolute;
+  width: 27.3rem;
+  height: 27.3rem;
+  top: 0;
+  left: 2rem;
+  color: #fff;
+  font-size: 3.2rem;
+  background: #c5e779;
+  text-align: center;
+}
+.img-holder .caption p {
+  color: #fff;
+  padding-top: 5rem;
+}
+.img-holder .caption:hover {
+  opacity: 1;
+}
+.img-holder .caption-blue {
+  opacity: 0;
+  position: absolute;
+  width: 27.3rem;
+  height: 27.3rem;
+  top: 0;
+  left: 2rem;
+  color: #fff;
+  font-size: 3.2rem;
+  background: #54d5fc;
+  text-align: center;
+}
+.img-holder .caption-blue p {
+  color: #fff;
+  padding-top: 5rem;
+}
+.img-holder .caption-blue:hover {
+  opacity: 1;
+}
+/*----------------CAROUSEL------------------*/
+.carousel-indicators {
+  position: absolute;
+  bottom: 40%;
+  z-index: 15;
+  width: 50%;
+  padding-left: 0;
+  margin-left: -65%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 20px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+.carousel-indicators .active {
+  width: 30px;
+  height: 5px;
+  margin: 20px;
+  background-color: #fcdb00;
+}
+.carousel-inner img {
+  border: 2rem solid #fff;
+}
+/*--------------END of CAROUSEL------------*/
+/*--------------MAP------------------------*/
+.map {
+  margin-top: -11%;
+}
+.map .col-md-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+#map {
+  height: 69rem;
+  width: auto;
+}
+.map-banner {
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow-x: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-image: url(../../img/map-banner.png);
+  min-height: 15.4rem;
+}
+/*--------------END of MAP-------------------*/
