@@ -18,11 +18,14 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	background-color: #fff;
-	
 	font-size: 10px;
-	font-family: "MyriadProCondBold";
+	font-family: 'PT Sans Narrow', sans-serif;
 	
 }
+/*------------------VARIABLES & etc-------------------*/
+@grey: #5e5e5e;
+@white: #ffffff;
+
 .bg() {
 	background-repeat: no-repeat;
 	background-position: top;
@@ -33,6 +36,7 @@ body {
 		-moz-background-size: cover;
 		-ms-background-size: cover;
 }
+
 .bg-form() {
 	background-repeat: no-repeat;
 	background-position: top;
@@ -42,459 +46,416 @@ body {
 		-moz-background-size: contain;
 		-ms-background-size: contain;
 }
-h1 {
-	font-size: 4.2rem;
-	color: #5e5e5e;
+
+/*horizontal align ul li*/
+.list() {
+	ul {
+		list-style-type: none;
+		li {
+			display: inline-block;
+		}
+	}
+} 
+.btn-main() {
+	color: #474747;
+	text-transform: uppercase;
 	font-weight: bold;
-	margin: 7rem 0 7rem 0;
+	background-color: #fcdb00;/*yellow*/
+	border-radius: 0;
+	border: 2px solid @white;
 }
-ul {
-	list-style-type: none;
+/*text transform for h*/
+.h-text() {
+	text-transform: uppercase;
+	font-weight: bold;
 }
+/*----------------------------------------------------*/
 
-
-
-/*-----------------HEADER-------------------*/
-header {
+/*------------------HEADER----------------------------*/
+.header-banner {
 	.bg();
 	background-image: url(../../img/header-banner.jpg);
 	min-height: 84rem;
-	font-family: "MyriadProRegular";
-	font-size: 1.6rem;
-	color: #3e3e3e;
 }
-
-nav {
-	margin-top: 1.5rem;
-	.form-control {
-		height: 5.3rem;
-		padding: 0.9rem 1.8rem;
-		font-size: 1.8rem;
-		text-align: center;
-		border-radius: 0px;
-		border: 2px solid #e79820;
-		color: #282828;
+/*логотип с подписью*/
+.logo {
+	margin-top: 1rem;
+	font-size: 1.7rem;
+	text-align: center;
+	ul {
+		list-style-type: none;
+		li:last-child {
+			padding-top: 1.5rem;
+		}
 	}
 }
-
+/*форма - заказать звонок*/
+.call-form {
+	.form-control {
+		width: 70%;
+		height: 5.3rem;
+		font-size: 1.8rem;
+		border-radius: 0;
+		border: 2px solid #e79820;
+		text-align: center;
+		padding: 1.8rem 1rem;
+			input::-webkit-input-placeholder {
+  				color: rgba(91,231,31,1);
+			}
+	}
+}
+/*номер телефона*/
 .phone {
-	color: #5e5e5e;
 	font-size: 3.2rem;
+	font-weight: bold;
+	color: @grey;
 		span {
 			font-size: 2.4rem;
 		}
 }
-.info {
-	font-family: "MyriadProCondBold";
-	line-height: 1;
-	p {
-		font-size: 2.6rem;
-		color: #303030;
+/*выравнивание по середине*/
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+@media (min-width: 768px) {
+	.logo {
+		text-align: center;
+	}
+	.call-form {
+		margin: 2rem 0 2rem 0;
+		.form-control {
+			width: 100%;
+		}
+	}
+	.phone {
+		text-align: center;
 	}
 }
-.form-top {
-	font-family: "MyriadProCondBold";
-	.bg-form();
-	background-image: url(../../img/form-top.png);
-	min-height: 60.2rem;
-	margin-top: -5rem;
-	padding: 7rem 3rem;
+@media (max-width: 992px) {
+	.call-form {
+		.form-control {
+			width: 100%;
+			padding: 1rem 0.5rem;
+		}
+	}
+}
+/*------------------END of HEADER--------------------*/
+
+/*------------------INFO-----------------------------*/
+h1 {
+	margin: 7.5rem 0 7.5rem 0;
+	font-size: 4.2rem;
+	color: @grey;
+	.h-text();
+}
+.info-title {
 	p {
-		color: #fff;
+		margin-bottom: 4rem;
+		font-size: 2.6rem;
+		color: #303030;
+		line-height: 1;
+	}
+	img {
+		margin-left: 4rem;
+	}
+}
+/*----------------FORM-----------------*/
+/*текст и изображение в форме*/
+.form-horizontal {
+	p {
+		padding: 7rem 0 4.5rem 0;
 		font-size: 3.1rem;
-		padding-bottom: 2rem;
+		color: @white;
+		line-height: 1;
+		.h-text();
 	}
 	img {
 		margin-top: 1rem;
 	}
-	
 }
-
-.form-horizontal {
-	font-size: 2.4rem;
-	label {
-		color: #fff;
-		height: 5.8rem;
-		line-height: 1;
-	}
-	.form-control {
-		height: 5.8rem;
-		color: #ababab;
-		font-size: 2.6rem;
-		border-radius: 0px;
-		border: none;
-		border-top: 1px solid #ababab;
-	}
+.form-contact {
+		.bg-form();
+		background-image: url(../../img/form-top.png);
+		min-height: 60.2rem;
+		margin-top: -5rem;
+}
+.form-group {
+	font-size: 2.6rem;
+	color: @white;
+	padding-left: 3rem;
+	
+		.form-control {
+			height: 6rem;
+			font-size: 2.6rem;
+			color: #ababab;
+			border-radius: 0;
+			border-top: 2px solid #ababab;
+			border-right: 1px solid #ababab;  
+		}	
 }
 .btn-price {
-	height: 5.8rem;
-	font-size: 3rem;
-	color: #474747;
-	background-color: #fcdb00;
-	border-radius: 0;
-	border: 1px solid #fff;
+	height: 6rem;
+	width: 25rem;
+	font-size: 2.6rem;
+	.btn-main();
+		&:hover {
+			background-color: @white;
+			border: 5px solid #fcdb00;
+		}
+}
+/*----------------END of FORM----------*/
+
+@media (max-width: 768px) {
+	h1 {
+		text-align: center;
+	}
+	.info-title {
+		p {
+			text-align: center;
+		}
+		img {
+			margin: 0;
+		}
+	}
+	.form-contact {
+		background-color: #54d5fc;
+		margin-top: 3rem;
+		border: 2px solid @white;
+		input {
+			width: 80%;
+		}
+	}
+	.btn-price {
+		width: 100%;
+		margin-top: 2rem; 
+	}
+}
+@media (max-width: 992px) {
+	.form-contact {
+		.bg;
+		background-image: url(../../img/form-top.png);
+		min-height: 50.2rem;
+		margin-top: 3rem;
+	}
+	.btn-price {
+		width: 65%;
+		margin-top: 2rem; 
+	}
 }
 
+/*------------------END of INFO----------------------*/
 
-/*-----------------CLIENTS--------------------*/
-.clients {
+/*------------------CLIENTS--------------------------*/
+.clients-banner {
 	.bg();
 	background-image: url(../../img/profit-banner.png);
-	min-height: 112rem;
-	font-family: "MyriadProCondBold";
-	color: #5e5e5e;
-	font-size: 1.8rem;
-	overflow: hidden;
-	.no-gutter > [class*='col-'] {
-    	padding-right:0;
-    	padding-left:0;
-	}
-
-		.clients-title {
-			font-size: 3.1rem;
-			font-weight: bold;
-			margin: 6rem 0 3rem 0;
+	min-height: 105rem;
+	color: @grey;
+		p {
+			font-size: 1.8rem;
+				span {
+					text-transform: uppercase;
+				}
 		}
-		.clients-card {
-			margin-top: 7rem;
+		img {
 			opacity: 0.5;
-				&:hover {
-					opacity: 1;
-				}
+			&:hover {
+				opacity: 1;
 			}
-
-		.clients-info {
-			background-color: #54d5fc;
-			color: #fff;
-			line-height: 1;
-			margin-top: -20%;
-				p {
-					padding: 7rem 2rem 9rem 2rem;
-					font-size: 7rem;
-						span {
-							font-size: 5.5rem;
-						}
-
-					}
 		}
-		.count-info {
-			height: 23rem;
-			display: inline-block;
-			background-color: #f1f1f1;
-			color: #474747;
-			font-size: 2.2rem;
-				p:first-child {
-					font-size: 9rem;
-				}
+}
+h2 {
+	margin-top: 6rem;
+	font-size: 3rem;
+	.h-text();
+}
+.btn-call {
+	.btn-main();
+	width: 37.5rem;
+	height: 7rem;
+	margin: 5rem 0 7rem 0;
+	font-size: 3rem;
+	padding-right: 3.5rem;
+		&:hover {
+			background-color: @grey;
+			color: #fcdb00;
+			border: 2px solid @white;
 		}
-		
+		img {
+			margin: 0 2.5rem 0 2.5rem;
+		}
 }
 
-/*-----------------PARTNERS-------------------*/
-.sertificate {
+/*забирает отступы*/
+.no-gutter > [class*='col-'] {
+    	padding-right:0;
+    	padding-left:0;
+}
+.count-info {
+	width: 100%;
+	height: 23rem;
+	background-color: #f1f1f1;
+	color: @grey;
+	text-align: center;
+	border-right: 1px solid @white;
+		p:first-child {
+			font-size: 9rem;
+		}
+		p:last-child {
+			font-size: 2.2rem;
+		}
+}
+.clients-img {
+	position: relative;
+	width: 39rem;
+	height: 29rem;
+	top: -6rem;
+	z-index: 10;
+}
+@media (max-width: 768px) {
+	h2 {
+		text-align: center;
+	}
+	.clients-banner {
+		p {
+			text-align: center;
+		}
+		.clients-img {
+			margin: 0 auto;
+			top: 2rem;
+			padding-bottom: 2rem;
+		}
+		.count-info {
+			border: 1px solid @white;
+		}
+
+	}
+}
+@media (max-width: 992px) {
+	.clients-img {
+		width: 100%;
+		margin: 0 auto;
+		top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+
+/*------------------END of CLIENTS-------------------*/
+
+
+/*------------------PARTNERS-------------------------*/
+.partners-banner {
 	.bg();
 	background-image: url(../../img/partners-banner.jpg);
 	min-height: 56rem;
-	font-family: "MyriadProSemiBold";
+	.list();
 }
 .honors {
-	width: 36rem;
-	height: 40rem;
-	margin-top: 9.5rem;
-	background-color: #fff;
+	width: 38rem;
+	height: 42rem;
+	margin-top: 8rem;
+	background-color: @white;
 	font-size: 2.5rem;
-	color: #5e5e5e;
-
+	color: @grey;
+	
 		li:first-child {
 			padding: 4rem 0 4rem 0;
+
 		}
 }
 .partners-title {
-	
 	font-size: 5rem;
-	color: #fff;
+	color: @white;
+	.h-text();
+	text-align: center;
 	p {
-		margin-top: 8rem;
-	}
-	.partners-list {
-		margin-top: 9rem;
-	}
-
-	ul {
-		li {
-			display: inline-block;
-			padding-right: 2rem;			
-		}
-	}
-	ul:last-child {
-		li {
-			padding-right: 3rem;
-		}
+		margin: 8rem 0 10rem 0;
 	}
 }
+.partners-list {
+	.vertical-center {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+	}
+
+}
 .btn-shop {
-	max-width: 70rem;
+	width: 100%;
 	height: 6rem;
-	margin-top: 3rem;
+	margin-top: 7rem;
 	padding: 1.2rem 18rem;
 	font-size: 2.4rem;
-	color: #fff;
+	color: @white;
 	background-color: #54d5fc;
 	border-radius: 0;
 	border: transparent;
 
 	&:hover {
 		color: #54d5fc;
-		background-color: #fff;
+		background-color: @white;
 		border: 2px solid #54d5fc;
 	}
 }
-/*-----------------PRODUCTS-------------------*/
-.products {
+/*----------------------------------------*/
+@media (max-width: 768px) {
+	.honors {
+		width: 100%;
+		height: 100%;
+		
+	}
+	.btn-shop {
+		width: 90%;
+		padding: 0;
+	}
+}
+@media (min-width: 999px) {
+	.partners-list {
+		margin-left: 7rem;
+	}
+	.partners-title {
+		p {
+			margin-left: 8rem;
+		}
+	}
+	.btn-shop {
+		margin-left: 7rem;
+	}
+}
+
+/*------------------END of PARTNERS------------------*/
+
+/*------------------PRODUCTS-------------------------*/
+.products-banner {
 	.bg();
 	background-image: url(../../img/product-banner.png);
-	min-height: 170rem;
-	font-family: "MyriadProSemiBold";
-
-	h2 {
-		font-size: 3.6rem;
-		color: #474747;
-		margin: 8rem 5rem;
-
+	min-height: 184rem;
+	color: @grey;
+}
+h3 {
+	margin: 8rem 0 6rem 0;
+	font-size: 3.6rem;
+	.h-text();
+	text-align: center;
 		span {
 			font-size: 4.6rem;
 		}
-	}
-	.btn {
-		padding: 0;
-	}
-
-
-.product-items {
-	img {
-		margin: 2rem 2rem;
-		background: #333; 
-    	box-shadow: 0 0 2rem rgba(0,0,0,0.5);
-	}
-}
-.btn-product {
-	margin-top: 4rem;
-	border-radius: 0;
-	border: 0;
-	box-shadow: 0 0 2rem rgba(0,0,0,0.5);
-
-	&:hover {
-		border: transparent;
-	}
-
 }
 
-	p {
-		margin: 6rem 6rem;
-		font-size: 3.6rem;
-		color: #474747;
-	}
-	
-}
-.brands-list {
-	margin-bottom: 5rem;
-}
-.vertical-center {
-	position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-/*-----------------CALL BACK----------------*/
-.call-back {
-	.bg();
-	background-image: url(../../img/call-banner.jpg);
-	height: 77rem;
-	font-family: "MyriadProCondBold";
-
-	p {
-		color: #fff;
-		font-size: 4.1rem;
-		line-height: 1;
-		margin-bottom: 8rem;
-			span {
-				font-size: 3.1rem;
-			}
-			span:last-child {
-				font-size: 2.1rem;
-			}
-
-	}
-}
-.form-call {
-	form {
-		.bg-form();
-		background-image: url(../../img/form-call.png);
-		min-height: 75rem;
-		padding: 10rem 0 0 6rem;
-	}
-}
-.btn-call {
-	width: 40rem;
-	height: 8.8rem;
-	margin-top: 8rem;
-	background-color: #fcdb00;
-	border-radius: 0;
-	border: 1px solid #fff;
-	font-size: 3.4rem;
-	color: #474747;
-		img {
-			margin-right: 2.4rem;
-		}
-		&:hover {
-			background-color: #fcdb00;
-			border: 3px solid #fff;
-			color: #fff;
-		}
-}
-
-/*-----------------PROFIT----------------*/
-.profit {
-	.bg();
-	background-image: url(../../img/profit-banner.png);
-	min-height: 160rem;
-	font-family: "MyriadProSemiBold";
-	font-size: 2.6rem;
-	color: #474747;
-	
-	h3 {
-		font-size: 4.6rem;
-		margin: 7rem 0 0 0;
-		
-	}
-	h4 {
-		font-size: 3.6rem;
-		margin: 8rem 0 5.5rem 0;
-	}
-
-	.shops {
-		font-family: "MyriadProRegular";
-		ul {
-			line-height: 2;
-				img {
-					margin-right: 3.3rem;
-
-				}
-			}
-		}
-	.profit-img {
-		opacity: 0.5;
-		&:hover {
-			opacity: 1;
-		}
-	}
-
-}
-
-/*-----------------FABRICATOR----------------*/
-.fabricator {
-	background-color: #54d5fc;
-	font-family: "MyriadProSemiBold";
-	font-size: 3.6rem;
-	color: #fff;
-		p {
-			margin: 7.6rem 8.6rem;
-		}
-}
-
-
-
-/*-----------------FABRICATOR----------------*/
-.partners {
-	.bg();
-	background-image: url(../../img/call-banner.png);
-	min-height: 112rem;
-	font-family: "MyriadProSemiBold";
-	color: #474747;
-
-	h5 {
-		margin: 20rem 0 3rem 0;
-		font-size: 2.4rem;
-
-	}
-
-	ul {
-		line-height: 2;
-		li {
-			font-size: 1.8rem;
-			padding-left: 6rem;
-			padding-top: -1rem;
-			&:first-child {
-				background: url(../../img/1.png) no-repeat top left;
-
-			}
-			&:nth-child(2) {
-				background: url(../../img/2.png) no-repeat top left;
-			}
-			&:nth-child(3) {
-				background: url(../../img/3.png) no-repeat top left;
-			}
-			&:last-child {
-				background: url(../../img/4.png) no-repeat top left;
-			}
-
-		}
-	}
-	
-}
-.form-bottom {
-	font-family: "MyriadProCondBold";
-	.bg-form();
-	background-image: url(../../img/form-top.png);
-	min-height: 60.2rem;
-	margin-top: 15rem;
-	padding: 7rem 3rem;
-
-	p {
-		color: #fff;
-		font-size: 3.1rem;
-		padding-bottom: 2rem;
-	}
-	img {
-		margin-top: 1rem;
-	}
-
-	.form-horizontal {
-	font-size: 2.4rem;
-	label {
-		color: #fff;
-		height: 5.8rem;
-		line-height: 1;
-	}
-	.form-control {
-		height: 5.8rem;
-		color: #ababab;
-		font-size: 2.6rem;
-		border-radius: 0px;
-		border: none;
-		border-top: 1px solid #ababab;
-	}
-}
-.btn-price {
-	height: 5.8rem;
-	font-size: 3rem;
-	color: #474747;
-	background-color: #fcdb00;
-	border-radius: 0;
-	border: 1px solid #fff;
-	}
-	
-}
-
-/*--------hover----------------*/
+/*----------------hover on img---------------*/
 .img-holder {
 	position: relative;
 	width: 27.3rem;
 	height: 27.3rem;
-	font-family: "MyriadProSemiBold";
+	box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+	margin: 1rem 0 1rem 0;
 
 	&:hover {
 			opacity: 1;
-		}
+	}
 
 	.caption {
 		opacity: 0;
@@ -502,13 +463,12 @@ nav {
 		width: 27.3rem;
 		height: 27.3rem;
 		top: 0;
-		left: 2rem;
-		color: #fff;
+		color: @white;
 		font-size: 3.2rem;
 		background: #c5e779;
 		text-align: center;
 			p {
-				color: #fff;
+				color: @white;
 				padding-top: 5rem;
 			}
 		&:hover {
@@ -523,13 +483,12 @@ nav {
 		width: 27.3rem;
 		height: 27.3rem;
 		top: 0;
-		left: 2rem;
-		color: #fff;
+		color: @white;
 		font-size: 3.2rem;
 		background: #54d5fc;
 		text-align: center;
 			p {
-				color: #fff;
+				color: @white;
 				padding-top: 5rem;
 			}
 		&:hover {
@@ -537,7 +496,205 @@ nav {
 		}
 	}
 }
+/*-----------end of hover on img-------------*/
+.btn-product {
+	margin-top: 4rem;
+	border-radius: 0;
+	border: 0;
+	box-shadow: 0 0 2rem rgba(0,0,0,0.5);
 
+	&:hover {
+		border: none;
+	}
+}
+.btn {
+	padding: 0;
+}
+
+/*-------------------------------------------*/
+@media (max-width: 768px) {
+	.img-holder {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+	}
+}
+@media (max-width: 992px) {
+	.img-holder {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+	}
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+	.img-holder {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2rem;
+	}
+}
+/*--------------------------------------------*/
+
+/*-----------------BRANDS---------------------*/
+.product-brands {
+	p {
+		margin: 6rem 0 6rem 0;
+		font-size: 3.6rem;
+		.h-text();
+		text-align: center;
+	}
+}
+
+.brands-list {
+	position: relative;
+	height: 13rem;
+}
+.vertical-center {
+	position: absolute;
+	top: 50%;          
+	transform: translate(0, -50%); 
+}
+/*------------------END of PRODUCTS------------------*/
+
+/*------------------CALL-BANNER----------------------*/
+.call-banner {
+	.bg();
+	background-image: url(../../img/call-banner.jpg);
+	min-height: 70rem;
+}
+.form-call {
+	min-height: 83rem;
+	margin-top: 2rem;
+		p {
+			padding-top: 15rem;
+			font-size: 4rem;
+			line-height: 1;
+			span {
+				font-size: 3.3rem;
+			}
+			.call-item {
+				font-size: 2rem;
+			}
+		}
+
+}
+.btn-call-form {
+	.btn-main();
+	width: 37.5rem;
+	height: 7rem;
+	margin: 2rem 0 0 0;
+	font-size: 3rem;
+	padding-right: 2.5rem;
+		&:hover {
+			background-color: @grey;
+			color: #fcdb00;
+			border: 2px solid @white;
+		}
+		img {
+			margin: 0 2.5rem 0 2.5rem;
+		}
+}
+/*------------------------------------------*/
+@media (max-width: 768px) {
+	.form-call {
+		background-color: #54d5fc;
+		margin-top: 3rem;
+		border: 2px solid @white;
+		input {
+			width: 90%;
+		}
+	}
+	.btn-call-form {
+		width: 100%;
+	}
+}
+@media (min-width: 769px) and (max-width: 991px) {
+	.form-call {
+		background-color: #54d5fc;
+		margin-top: 3rem;
+		border: 2px solid @white;
+		input {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.form-call {
+		.bg-form(); 
+		background-image: url(../../img/form-call.png);
+	}
+
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+	.form-call {
+		.bg-form(); 
+		margin-top: 10rem;
+		background-image: url(../../img/form-call.png);
+		min-height: 60rem;
+			p {
+				padding-top: 10rem;
+			}
+	}
+	.btn-call-form {
+		width: 31rem;
+	}
+}
+@media (min-width: 1201px) {
+	.form-call {
+		.bg-form(); 
+		margin-top: 15rem;
+		background-image: url(../../img/form-call.png);
+		min-height: 73rem;
+			p {
+				padding-top: 10rem;
+			}
+	}
+}
+/*------------------END of CALL-BANNER---------------*/
+
+/*------------------PROFIT---------------------------*/
+.profit-banner {
+	.bg();
+	background-image: url(../../img/profit-banner.png);
+	min-height: 190rem;
+	color: @grey;
+	font-size: 2.6rem;
+	.list();
+	line-height: 2;
+		li {
+			img {
+				margin-right: 3.3rem;
+			}
+		}
+	img {
+		opacity: 0.7;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+h4 {
+	margin: 7rem 0 6rem 0;
+	font-size: 4.6rem;
+	.h-text();
+	text-align: center;
+}
+h5 {
+	margin: 4rem 0 5rem 0;
+	font-size: 3.6rem;
+	.h-text();
+	text-align: center;
+}
+.fabrics {
+	margin-top: 12rem;
+	background-color: #54d5fc;
+	h5 {
+		margin-top: 7rem;
+		color: @white;
+		text-align: left;
+	}
+}
 /*----------------CAROUSEL------------------*/
 .carousel-indicators {
 	position: absolute;
@@ -558,7 +715,7 @@ nav {
 	    cursor: pointer;
 	    border: none;
 	    border-radius: 0;
-	    background-color: #fff;
+	    background-color: @white;
 	}    
 }
 .carousel-indicators {
@@ -571,26 +728,144 @@ nav {
 }
 .carousel-inner {
 	img {
-		border: 2rem solid #fff;
+		border: 2rem solid @white;
 	}
 }
-/*--------------END of CAROUSEL------------*/
+/*-------------------------------------*/
+@media (max-width: 768px) {
+	.carousel-indicators {
+  		bottom: -1rem;
+  		left: 5%;
+  		width: 100%;
+  		margin-left: -5%;
+	  	
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
+	}
+	.carousel-indicators {
+		.active {
+			margin: 10px;
+		}
+	}
+	.fabrics {
+		h5 {
+			text-align: center;
+		}
+	}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+	.carousel-indicators {
+  		bottom: 1rem;
+  		left: 5%;
+  		width: 100%;
+  		margin-left: -10%;
+	  	
+		li {
+			display: inline-block;
+			margin: 10px;
+		}
+	}
+	.carousel-indicators {
+		.active {
+			margin: 10px;
+		}
+	}
+	.fabrics {
+		h5 {
+			text-align: center;
+		}
+	}
+}
+/*----------------END of CAROUSEL----------*/
+/*------------------END of PROFIT--------------------*/
 
-/*--------------MAP------------------------*/
-.map {
-	margin-top: -11%;
-	.col-md-12 {
-    	padding-right:0;
-    	padding-left:0;
-    }
-}
-#map {
-	height: 69rem;
-	width: auto;
-}
-.map-banner {
+/*------------------PARTNERS INFO--------------------*/
+.partner-info-banner {
 	.bg();
-	background-image: url(../../img/map-banner.png);
-	min-height: 15.4rem;
+	background-image: url(../../img/call-banner.png);
+	min-height: 112rem;
+	color: @grey;
+	font-size: 2.6rem;
+	.list();
+		h6 {
+			margin: 11rem 0 3rem 0;
+			font-size: 3.6rem;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	ul {
+		line-height: 1.5;
+		li {
+			padding-left: 6rem;
+				&:first-child {
+					background: url(../../img/1.png) no-repeat top left;
+				}
+				&:nth-child(2) {
+					background: url(../../img/2.png) no-repeat top left;
+				}
+				&:nth-child(3) {
+					background: url(../../img/3.png) no-repeat top left;
+				}
+				&:last-child {
+					background: url(../../img/4.png) no-repeat top left;
+				}
+		}
+	}
+
 }
-/*--------------END of MAP-------------------*/
+.form-bottom {
+	.bg-form();
+	background-image: url(../../img/form-top.png);
+	min-height: 60.2rem;
+	margin-top: 17rem;
+	margin-left: 4rem;
+		.btn-price {
+			height: 6rem;
+			width: 23rem;
+			font-size: 2.6rem;
+			.btn-main();
+				&:hover {
+					background-color: @white;
+					border: 5px solid #fcdb00;
+				}
+		}
+		.form-horizontal {
+			p {
+				padding: 6rem 0 3rem 0;
+			}
+		}
+}
+/*-----------------------------------*/
+@media (max-width: 768px) {
+	.form-bottom {
+		background-color: #54d5fc;
+		margin: 0 auto;
+		padding: 0;
+		border: 2px solid @white;
+		input {
+			width: 80%;
+		}
+	}
+	.btn-price {
+		width: 100%;
+		margin-top: 2rem;
+		margin: 0 auto; 
+	}
+}
+@media (min-width: 990px) {
+	.form-bottom {
+		.bg-form();
+		background-image: url(../../img/form-top.png);
+		min-height: 60.2rem;
+	}
+
+}
+/*------------------END of PARTNERS INFO-------------*/
+
+/*------------------MAP------------------------------*/
+#map-canvas {
+	height: 69rem;
+	margin-top: -11%;
+}
