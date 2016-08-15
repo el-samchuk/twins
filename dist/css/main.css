@@ -21,6 +21,7 @@ body {
 }
 /*------------------VARIABLES & etc-------------------*/
 /*horizontal align ul li*/
+/**/
 /*text transform for h*/
 /*----------------------------------------------------*/
 /*------------------HEADER----------------------------*/
@@ -75,26 +76,6 @@ body {
   display: inline-block;
   vertical-align: middle;
   float: none;
-}
-@media (min-width: 768px) {
-  .logo {
-    text-align: center;
-  }
-  .call-form {
-    margin: 2rem 0 2rem 0;
-  }
-  .call-form .form-control {
-    width: 100%;
-  }
-  .phone {
-    text-align: center;
-  }
-}
-@media (max-width: 992px) {
-  .call-form .form-control {
-    width: 100%;
-    padding: 1rem 0.5rem;
-  }
 }
 /*------------------END of HEADER--------------------*/
 /*------------------INFO-----------------------------*/
@@ -169,68 +150,6 @@ h1 {
   border: 5px solid #fcdb00;
 }
 /*----------------END of FORM----------*/
-@media (max-width: 768px) {
-  h1 {
-    text-align: center;
-  }
-  .info-title p {
-    text-align: center;
-  }
-  .info-title img {
-    margin: 0;
-  }
-  .form-contact {
-    background-color: #54d5fc;
-    margin-top: 3rem;
-    border: 2px solid #ffffff;
-  }
-  .form-contact input {
-    width: 80%;
-  }
-  .btn-price {
-    width: 100%;
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 992px) {
-  .form-contact {
-    background-repeat: no-repeat;
-    background-position: top;
-    overflow-x: hidden;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    background-image: url(../../img/form-top.png);
-    min-height: 50.2rem;
-    margin-top: 3rem;
-  }
-  .btn-price {
-    width: 65%;
-    margin-top: 2rem;
-  }
-}
-/*@media (max-width: 1000px) {
-	.form-contact {
-		.bg-form();
-		background-image: url(../../img/form-top.png);
-		min-height: 60.2rem;
-		margin-top: -5rem;
-	}
-	.form-group {
-	padding-left: 0;
-		.form-control {
-			width: 100%;
-		}
-	}
-	.form-horizontal {
-		p {
-			padding: 4rem 0 2rem 0;
-		}
-	}
-
-}*/
 /*------------------END of INFO----------------------*/
 /*------------------CLIENTS--------------------------*/
 .clients-banner {
@@ -312,38 +231,6 @@ h2 {
   top: -6rem;
   z-index: 10;
 }
-@media (max-width: 768px) {
-  h2 {
-    text-align: center;
-  }
-  .clients-banner p {
-    text-align: center;
-  }
-  .clients-banner .clients-img {
-    margin: 0 auto;
-    top: 2rem;
-    padding-bottom: 2rem;
-  }
-  .clients-banner .count-info {
-    border: 1px solid #ffffff;
-  }
-}
-@media (max-width: 992px) {
-  .clients-img {
-    width: 100%;
-    margin: 0 auto;
-    top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-/*@media (min-width: 992px) {
-	.clients-img {
-		
-		position: relative;
-		top: -3rem;
-		z-index: 10;
-	}
-}*/
 /*------------------END of CLIENTS-------------------*/
 /*------------------PARTNERS-------------------------*/
 .partners-banner {
@@ -405,28 +292,6 @@ h2 {
   color: #54d5fc;
   background-color: #ffffff;
   border: 2px solid #54d5fc;
-}
-/*----------------------------------------*/
-@media (max-width: 768px) {
-  .honors {
-    width: 100%;
-    height: 100%;
-  }
-  .btn-shop {
-    width: 90%;
-    padding: 0;
-  }
-}
-@media (min-width: 999px) {
-  .partners-list {
-    margin-left: 7rem;
-  }
-  .partners-title p {
-    margin-left: 8rem;
-  }
-  .btn-shop {
-    margin-left: 7rem;
-  }
 }
 /*------------------END of PARTNERS------------------*/
 /*------------------PRODUCTS-------------------------*/
@@ -514,28 +379,6 @@ h3 span {
   padding: 0;
 }
 /*-------------------------------------------*/
-@media (max-width: 768px) {
-  .img-holder {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 992px) {
-  .img-holder {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-  .img-holder {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-  }
-}
-/*--------------------------------------------*/
 /*-----------------BRANDS---------------------*/
 .product-brands p {
   margin: 6rem 0 6rem 0;
@@ -565,10 +408,10 @@ h3 span {
   -moz-background-size: cover;
   -ms-background-size: cover;
   background-image: url(../../img/call-banner.jpg);
-  min-height: 70rem;
+  height: 70rem;
 }
 .form-call {
-  min-height: 83rem;
+  max-height: 83rem;
   margin-top: 2rem;
 }
 .form-call p {
@@ -605,78 +448,6 @@ h3 span {
   margin: 0 2.5rem 0 2.5rem;
 }
 /*------------------------------------------*/
-@media (max-width: 768px) {
-  .form-call {
-    background-color: #54d5fc;
-    margin-top: 3rem;
-    border: 2px solid #ffffff;
-  }
-  .form-call input {
-    width: 90%;
-  }
-  .btn-call-form {
-    width: 100%;
-  }
-}
-@media (min-width: 769px) and (max-width: 991px) {
-  .form-call {
-    background-color: #54d5fc;
-    margin-top: 3rem;
-    border: 2px solid #ffffff;
-  }
-  .form-call input {
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .form-call {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    -moz-background-size: contain;
-    -ms-background-size: contain;
-    background-image: url(../../img/form-call.png);
-  }
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-  .form-call {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    -moz-background-size: contain;
-    -ms-background-size: contain;
-    margin-top: 10rem;
-    background-image: url(../../img/form-call.png);
-    min-height: 60rem;
-  }
-  .form-call p {
-    padding-top: 10rem;
-  }
-  .btn-call-form {
-    width: 31rem;
-  }
-}
-@media (min-width: 1201px) {
-  .form-call {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    -moz-background-size: contain;
-    -ms-background-size: contain;
-    margin-top: 15rem;
-    background-image: url(../../img/form-call.png);
-    min-height: 73rem;
-  }
-  .form-call p {
-    padding-top: 10rem;
-  }
-}
 /*------------------END of CALL-BANNER---------------*/
 /*------------------PROFIT---------------------------*/
 .profit-banner {
@@ -697,10 +468,7 @@ h3 span {
 .profit-banner ul {
   list-style-type: none;
 }
-.profit-banner ul li {
-  display: inline-block;
-}
-.profit-banner li img {
+.profit-banner ul li img {
   margin-right: 3.3rem;
 }
 .profit-banner img {
@@ -764,42 +532,6 @@ h5 {
   border: 2rem solid #ffffff;
 }
 /*-------------------------------------*/
-@media (max-width: 768px) {
-  .carousel-indicators {
-    bottom: -1rem;
-    left: 5%;
-    width: 100%;
-    margin-left: -5%;
-  }
-  .carousel-indicators li {
-    display: inline-block;
-    margin: 10px;
-  }
-  .carousel-indicators .active {
-    margin: 10px;
-  }
-  .fabrics h5 {
-    text-align: center;
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  .carousel-indicators {
-    bottom: 1rem;
-    left: 5%;
-    width: 100%;
-    margin-left: -10%;
-  }
-  .carousel-indicators li {
-    display: inline-block;
-    margin: 10px;
-  }
-  .carousel-indicators .active {
-    margin: 10px;
-  }
-  .fabrics h5 {
-    text-align: center;
-  }
-}
 /*----------------END of CAROUSEL----------*/
 /*------------------END of PROFIT--------------------*/
 /*------------------PARTNERS INFO--------------------*/
@@ -880,35 +612,6 @@ h5 {
   padding: 6rem 0 3rem 0;
 }
 /*-----------------------------------*/
-@media (max-width: 768px) {
-  .form-bottom {
-    background-color: #54d5fc;
-    margin: 0 auto;
-    padding: 0;
-    border: 2px solid #ffffff;
-  }
-  .form-bottom input {
-    width: 80%;
-  }
-  .btn-price {
-    width: 100%;
-    margin-top: 2rem;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 990px) {
-  .form-bottom {
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    -moz-background-size: contain;
-    -ms-background-size: contain;
-    background-image: url(../../img/form-top.png);
-    min-height: 60.2rem;
-  }
-}
 /*------------------END of PARTNERS INFO-------------*/
 /*------------------MAP------------------------------*/
 #map-canvas {

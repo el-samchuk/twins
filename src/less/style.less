@@ -56,6 +56,7 @@ body {
 		}
 	}
 } 
+/**/
 .btn-main() {
 	color: #474747;
 	text-transform: uppercase;
@@ -120,28 +121,6 @@ body {
     float: none;
 }
 
-@media (min-width: 768px) {
-	.logo {
-		text-align: center;
-	}
-	.call-form {
-		margin: 2rem 0 2rem 0;
-		.form-control {
-			width: 100%;
-		}
-	}
-	.phone {
-		text-align: center;
-	}
-}
-@media (max-width: 992px) {
-	.call-form {
-		.form-control {
-			width: 100%;
-			padding: 1rem 0.5rem;
-		}
-	}
-}
 /*------------------END of HEADER--------------------*/
 
 /*------------------INFO-----------------------------*/
@@ -207,44 +186,6 @@ h1 {
 		}
 }
 /*----------------END of FORM----------*/
-
-@media (max-width: 768px) {
-	h1 {
-		text-align: center;
-	}
-	.info-title {
-		p {
-			text-align: center;
-		}
-		img {
-			margin: 0;
-		}
-	}
-	.form-contact {
-		background-color: #54d5fc;
-		margin-top: 3rem;
-		border: 2px solid @white;
-		input {
-			width: 80%;
-		}
-	}
-	.btn-price {
-		width: 100%;
-		margin-top: 2rem; 
-	}
-}
-@media (max-width: 992px) {
-	.form-contact {
-		.bg;
-		background-image: url(../../img/form-top.png);
-		min-height: 50.2rem;
-		margin-top: 3rem;
-	}
-	.btn-price {
-		width: 65%;
-		margin-top: 2rem; 
-	}
-}
 
 /*------------------END of INFO----------------------*/
 
@@ -315,33 +256,6 @@ h2 {
 	top: -6rem;
 	z-index: 10;
 }
-@media (max-width: 768px) {
-	h2 {
-		text-align: center;
-	}
-	.clients-banner {
-		p {
-			text-align: center;
-		}
-		.clients-img {
-			margin: 0 auto;
-			top: 2rem;
-			padding-bottom: 2rem;
-		}
-		.count-info {
-			border: 1px solid @white;
-		}
-
-	}
-}
-@media (max-width: 992px) {
-	.clients-img {
-		width: 100%;
-		margin: 0 auto;
-		top: 2rem;
-		padding-bottom: 2rem;
-	}
-}
 
 /*------------------END of CLIENTS-------------------*/
 
@@ -398,31 +312,6 @@ h2 {
 		color: #54d5fc;
 		background-color: @white;
 		border: 2px solid #54d5fc;
-	}
-}
-/*----------------------------------------*/
-@media (max-width: 768px) {
-	.honors {
-		width: 100%;
-		height: 100%;
-		
-	}
-	.btn-shop {
-		width: 90%;
-		padding: 0;
-	}
-}
-@media (min-width: 999px) {
-	.partners-list {
-		margin-left: 7rem;
-	}
-	.partners-title {
-		p {
-			margin-left: 8rem;
-		}
-	}
-	.btn-shop {
-		margin-left: 7rem;
 	}
 }
 
@@ -512,28 +401,7 @@ h3 {
 }
 
 /*-------------------------------------------*/
-@media (max-width: 768px) {
-	.img-holder {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2rem;
-	}
-}
-@media (max-width: 992px) {
-	.img-holder {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2rem;
-	}
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-	.img-holder {
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2rem;
-	}
-}
-/*--------------------------------------------*/
+
 
 /*-----------------BRANDS---------------------*/
 .product-brands {
@@ -560,10 +428,10 @@ h3 {
 .call-banner {
 	.bg();
 	background-image: url(../../img/call-banner.jpg);
-	min-height: 70rem;
+	height: 70rem;
 }
 .form-call {
-	min-height: 83rem;
+	max-height: 83rem;
 	margin-top: 2rem;
 		p {
 			padding-top: 15rem;
@@ -595,62 +463,7 @@ h3 {
 		}
 }
 /*------------------------------------------*/
-@media (max-width: 768px) {
-	.form-call {
-		background-color: #54d5fc;
-		margin-top: 3rem;
-		border: 2px solid @white;
-		input {
-			width: 90%;
-		}
-	}
-	.btn-call-form {
-		width: 100%;
-	}
-}
-@media (min-width: 769px) and (max-width: 991px) {
-	.form-call {
-		background-color: #54d5fc;
-		margin-top: 3rem;
-		border: 2px solid @white;
-		input {
-			width: 100%;
-		}
-	}
-}
 
-@media (min-width: 992px) {
-	.form-call {
-		.bg-form(); 
-		background-image: url(../../img/form-call.png);
-	}
-
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-	.form-call {
-		.bg-form(); 
-		margin-top: 10rem;
-		background-image: url(../../img/form-call.png);
-		min-height: 60rem;
-			p {
-				padding-top: 10rem;
-			}
-	}
-	.btn-call-form {
-		width: 31rem;
-	}
-}
-@media (min-width: 1201px) {
-	.form-call {
-		.bg-form(); 
-		margin-top: 15rem;
-		background-image: url(../../img/form-call.png);
-		min-height: 73rem;
-			p {
-				padding-top: 10rem;
-			}
-	}
-}
 /*------------------END of CALL-BANNER---------------*/
 
 /*------------------PROFIT---------------------------*/
@@ -660,11 +473,13 @@ h3 {
 	min-height: 190rem;
 	color: @grey;
 	font-size: 2.6rem;
-	.list();
 	line-height: 2;
-		li {
-			img {
-				margin-right: 3.3rem;
+		ul {
+			list-style-type: none;
+			li {
+				img {
+					margin-right: 3.3rem;
+				}
 			}
 		}
 	img {
@@ -732,52 +547,7 @@ h5 {
 	}
 }
 /*-------------------------------------*/
-@media (max-width: 768px) {
-	.carousel-indicators {
-  		bottom: -1rem;
-  		left: 5%;
-  		width: 100%;
-  		margin-left: -5%;
-	  	
-		li {
-			display: inline-block;
-			margin: 10px;
-		}
-	}
-	.carousel-indicators {
-		.active {
-			margin: 10px;
-		}
-	}
-	.fabrics {
-		h5 {
-			text-align: center;
-		}
-	}
-}
-@media (min-width: 769px) and (max-width: 992px) {
-	.carousel-indicators {
-  		bottom: 1rem;
-  		left: 5%;
-  		width: 100%;
-  		margin-left: -10%;
-	  	
-		li {
-			display: inline-block;
-			margin: 10px;
-		}
-	}
-	.carousel-indicators {
-		.active {
-			margin: 10px;
-		}
-	}
-	.fabrics {
-		h5 {
-			text-align: center;
-		}
-	}
-}
+
 /*----------------END of CAROUSEL----------*/
 /*------------------END of PROFIT--------------------*/
 
@@ -838,30 +608,7 @@ h5 {
 		}
 }
 /*-----------------------------------*/
-@media (max-width: 768px) {
-	.form-bottom {
-		background-color: #54d5fc;
-		margin: 0 auto;
-		padding: 0;
-		border: 2px solid @white;
-		input {
-			width: 80%;
-		}
-	}
-	.btn-price {
-		width: 100%;
-		margin-top: 2rem;
-		margin: 0 auto; 
-	}
-}
-@media (min-width: 990px) {
-	.form-bottom {
-		.bg-form();
-		background-image: url(../../img/form-top.png);
-		min-height: 60.2rem;
-	}
 
-}
 /*------------------END of PARTNERS INFO-------------*/
 
 /*------------------MAP------------------------------*/
